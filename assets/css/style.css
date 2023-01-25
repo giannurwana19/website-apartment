@@ -69,6 +69,7 @@
   z-index: 101;
   background-color: white;
   padding: 8px;
+  width: 55%;
 }
 
 .header .box-header .box:nth-child(1) form input {
