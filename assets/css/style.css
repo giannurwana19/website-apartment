@@ -5,12 +5,50 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.header-container {
+  width: 80%;
+  margin-inline: auto;
+}
+
 .header .box-header {
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
+}
+
+.header .box-header .box:nth-child(1) {
+  background-color: black;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav h2 {
+  color: white;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav ul {
+  display: flex;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav ul li {
+  list-style: none;
+  margin-inline: 20px;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .box-header .box:nth-child(1) .menu-nav ul li a:hover {
+  color: #316acc;
+  transition: all 0.3s ease;
 }
 
 .header .box-header .box:nth-child(2) {
