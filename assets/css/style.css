@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  margin-bottom: 70px;
 }
 
 .header .box-header .box:nth-child(1) .menu-nav h2 {
@@ -49,6 +50,61 @@
 .header .box-header .box:nth-child(1) .menu-nav ul li a:hover {
   color: #316acc;
   transition: all 0.3s ease;
+}
+
+.header .box-header .box:nth-child(1) .title {
+  margin-bottom: 30px;
+}
+
+.header .box-header .box:nth-child(1) .title h1 {
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.header .box-header .box:nth-child(1) form {
+  display: flex;
+  position: absolute;
+  z-index: 101;
+  background-color: white;
+  padding: 8px;
+}
+
+.header .box-header .box:nth-child(1) form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.header .box-header .box:nth-child(1) form input:focus {
+  outline: none;
+}
+
+.header .box-header .box:nth-child(1) form input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header .box-header .box:nth-child(1) form button {
+  width: 150px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #01090a;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.header .box-header .box:nth-child(1) form button:hover {
+  background-color: #1b4ea7;
+  transition: all 0.3s ease;
+}
+
+.header .box-header .box:nth-child(1) .title p {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header .box-header .box:nth-child(2) {
