@@ -147,3 +147,39 @@ agar tidak fix dan dapat dibagi grid nya
   width: 100%;
   height: 100%;
 }
+
+.header .box-header .box:nth-child(2) .bg-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+  filter: opacity(20%);
+}
+
+.header .box-header .box:nth-child(2) .loc {
+  position: absolute;
+  z-index: 101;
+  top: 35%;
+  transform: translate(-50%, -65%);
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header .box-header .box:nth-child(2) .loc p i {
+  color: var(--primary);
+  margin-right: 5px;
+}
+
+.header .box-header .box:nth-child(2) .loc p:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.header .box-header .box:nth-child(2) .loc p:nth-child(2) {
+  color: var(--secondary);
+}
