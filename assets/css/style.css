@@ -1,3 +1,9 @@
+:root {
+  --primary: #316acc;
+  --primary-hover: #1b4ea7;
+  --secondary: rgba(255, 255, 255, 0.5);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +54,7 @@
 }
 
 .header .box-header .box:nth-child(1) .menu-nav ul li a:hover {
-  color: #316acc;
+  color: var(--primary);
   transition: all 0.3s ease;
 }
 
@@ -100,12 +106,32 @@
 }
 
 .header .box-header .box:nth-child(1) form button:hover {
-  background-color: #1b4ea7;
+  background-color: var(--primary-hover);
   transition: all 0.3s ease;
 }
 
+.header .box-header .box:nth-child(1) .info {
+  margin-top: 130px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.header .box-header .box:nth-child(1) .info .box h1 {
+  color: white;
+}
+
+.header .box-header .box:nth-child(1) .info .box h1 i {
+  color: var(--primary);
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.header .box-header .box:nth-child(1) .info .box p {
+  color: var(--secondary);
+}
+
 .header .box-header .box:nth-child(1) .title p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--secondary);
 }
 
 .header .box-header .box:nth-child(2) {
