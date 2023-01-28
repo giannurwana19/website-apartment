@@ -269,6 +269,53 @@ agar tidak fix dan dapat dibagi grid nya
   transition: all 0.3s ease;
 }
 
+/* about section */
+.about {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.about .box-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 40px;
+}
+
+.about .box-about .box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .box-about .box h1 {
+  margin-bottom: 10px;
+}
+
+.about .box-about .box p {
+  margin-bottom: 20px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.about .box-about .box button {
+  width: 160px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #316acc;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.about .box-about .box button:hover {
+  background-color: #1b4ea7;
+}
+
 @media screen and (max-width: 1200px) {
   .header .box-header .box:nth-child(1) .menu-nav ul li {
     margin-inline: 0;
@@ -376,6 +423,20 @@ agar tidak fix dan dapat dibagi grid nya
   .header .box-header > .box:nth-child(2) {
     display: none;
   }
+
+  .about .box-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .about .box-about .box img {
+    width: 400px;
+  }
+
+  .about .box-about .box p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -410,6 +471,11 @@ agar tidak fix dan dapat dibagi grid nya
   .bg-fixed h1 {
     font-size: 60px;
   }
+
+  .about .box-about .box img {
+    width: 100%;
+    padding-inline: 20px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -430,6 +496,10 @@ agar tidak fix dan dapat dibagi grid nya
   .header .box-header .box:nth-child(1) .info .box {
     text-align: center;
   }
+
+  .about .box-about .box p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -443,5 +513,13 @@ agar tidak fix dan dapat dibagi grid nya
 
   .bg-fixed h1 {
     font-size: 40px;
+  }
+
+  .about .box-about .box {
+    align-self: flex-end;
+  }
+
+  .box .box-about {
+    row-gap: 10px;
   }
 }
