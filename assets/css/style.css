@@ -11,6 +11,22 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.kotak {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  outline: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.kotak:nth-child(1) {
+  top: -200px;
+}
+
+.kotak:nth-child(2) {
+  left: 150px;
+  top: -50px;
+}
+
 /* header */
 .header-container {
   width: 80%;
