@@ -247,6 +247,28 @@ agar tidak fix dan dapat dibagi grid nya
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/* background fixed */
+.bg-fixed {
+  /* position: relative; */
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../img/bg-fixed.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+}
+
+.bg-fixed h1 {
+  font-size: 100px;
+  color: white;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 1200px) {
   .header .box-header .box:nth-child(1) .menu-nav ul li {
     margin-inline: 0;
@@ -365,6 +387,10 @@ agar tidak fix dan dapat dibagi grid nya
   .header .box-header .box:nth-child(1) .info {
     margin-top: 60px;
   }
+
+  .bg-fixed h1 {
+    font-size: 80px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -379,6 +405,10 @@ agar tidak fix dan dapat dibagi grid nya
 
   .header .box-header .box:nth-child(1) .info .box h1 i {
     font-size: 30px;
+  }
+
+  .bg-fixed h1 {
+    font-size: 60px;
   }
 }
 
@@ -409,5 +439,9 @@ agar tidak fix dan dapat dibagi grid nya
 
   .apartment .box-apartment {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .bg-fixed h1 {
+    font-size: 40px;
   }
 }
