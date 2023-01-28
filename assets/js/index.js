@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 const menuBar = document.querySelector('.ri-menu-3-line');
 const menuNav = document.querySelector('.menu');
@@ -13,4 +15,3 @@ bgNav.addEventListener('click', () => {
   menuNav.classList.remove('menu-active');
   bgNav.classList.remove('bg-active');
 });
-
