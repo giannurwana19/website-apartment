@@ -99,6 +99,7 @@
   background-color: white;
   padding: 8px;
   width: 55%;
+  --animate-delay: 1s;
 }
 
 .header .box-header .box:nth-child(1) form input {
@@ -137,6 +138,7 @@
   margin-top: 130px;
   display: flex;
   column-gap: 30px;
+  --animate-delay: 1.5s;
 }
 
 .header .box-header .box:nth-child(1) .info .box h1 {
@@ -155,6 +157,7 @@
 
 .header .box-header .box:nth-child(1) .title p {
   color: var(--secondary);
+  --animate-delay: 0.7s;
 }
 
 .header .box-header .box:nth-child(2) {
@@ -192,6 +195,7 @@ agar tidak fix dan dapat dibagi grid nya
   color: white;
   padding: 20px;
   text-align: center;
+  --animate-delay: 1.3s;
 }
 
 .header .box-header .box:nth-child(2) .loc p i {
